@@ -1,0 +1,38 @@
+1.
+boolean x = true;
+boolean y = false;
+boolean z = true;
+boolean w = !(x || y) & z | (z && !y) ^ !x;
+Antwort:
+Bew.:
+Wegen der Praezedenzregeln,boolean w wird so ausgewertet:((!(x || y)) & z) | ((z && (!y)) ^ (!x))
+(Praeyedenz: 1.Platz ist !,dann &,^,|,&&,||)
+
+x||y = true||false = true;
+!(x || y) = false;
+(!(x || y)) & z) = false & true = false;
+!y = !(false) = true;
+z && (!y) = true && true = true;
+!x = !(true) = false;
+((z && (!y)) ^ (!x)) = true ^ false = true;
+
+((!(x || y)) & z) | ((z && (!y)) ^ (!x)) =false | true = true;
+=>boolean w = true;
+
+2.
+Warum ist der Wert der Variable b nicht wie erwartet?
+Antwort: denn f3 != f4,sie haben ungleiche Genauigkeit.f3 = 1000.0, f4 = 1000.0001.
+
+Was mueueste geaendert werden, damit wie erwartet b
+true waere?
+Antwort: boolean b = f3!=f4;
+
+
+3.Warum wuerde es beim Kompilieren dieser drei Anweisungen zu einem Fehler kommen und was muesste an diesem
+Programmstueck geaendert werden, sodass die Variable c wie gewuenscht initialisiert werden kann?
+
+Antwort:denn 30,12 sind integers,und integer plus integer ist auch integer.
+es soll so aendern:
+int a = 30;
+int b = 12;
+int c = a + b;
