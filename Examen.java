@@ -1,7 +1,5 @@
-import java.util.Scanner;
 public class Examen{
 	public static void main(String[] args){
-		Scanner scanner=new Scanner(System.in);
 		int p = scanner.nextInt();
 		int m = scanner.nextInt();
 		int i;
@@ -11,7 +9,6 @@ public class Examen{
 			System.out.println(j + " ");
 			
 			}
-			System.out.println(" ");
 			}
 	
 	
