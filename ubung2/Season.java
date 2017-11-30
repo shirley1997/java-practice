@@ -1,5 +1,5 @@
 class Season{
-	//Season season = new Season();
+	
 	String name;
 	int number;
 	Series series;

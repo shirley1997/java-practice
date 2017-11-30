@@ -1,5 +1,5 @@
 class Episode{
-	//Episode episode= new Episode();
+	
 	Season season;
 	String Episodename;
 	int number;
